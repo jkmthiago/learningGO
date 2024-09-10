@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-func studentPerformance(n1, n2 float32) (approved bool) {
+func studentPerformance(n1, n2 float32) (bool) {
+	defer println("O Desempenho do aluno foi")
 	fmt.Println("Analisando performance do aluno")
 	media := (n1 + n2) / 2
 
 	fmt.Println("Media do aluno:", media)
 	
 	if media >= 7 {
-		approved = true		
+		return true		
 	} else {
-		approved = false
+		return false
 	}
-	return	
 }
 
 func main() {
-	isTheStudentApproved := studentPerformance(7.8, 6.2)
+	isTheStudentApproved := studentPerformance(7.8, 5.2)
 	if isTheStudentApproved {
 		fmt.Println("Estudante aprovado")
 	} else {
