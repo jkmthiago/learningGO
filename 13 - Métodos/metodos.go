@@ -15,7 +15,6 @@ type usuario struct {
 
 func (u usuario) salvar() {
 	fmt.Printf("\nSaving data from User %s on dadabase\n", u.nome)
-	
 }
 
 func (u usuario) maiorDeIdade() bool {
