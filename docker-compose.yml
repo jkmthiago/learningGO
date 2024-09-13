@@ -1,0 +1,12 @@
+service:
+  go:
+    image: "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm
+    volumes:
+      - ./:/go/src/app
+    ports:
+      - 3000:3000
+  
+  db:
+    image: mysql
+    ports: 
+    - 5000:3306
