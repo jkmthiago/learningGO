@@ -13,7 +13,7 @@ services:
       - DB_PORT=5432
       - DB_NAME=devbook
       - DB_USER=fibralink
-      - DB_PASS=UbEkposOx7HoapUbEridarongejyig2
+      - DB_PASS=2345678
   db:
     image: postgres:16
     volumes:
